@@ -1,0 +1,12 @@
+${PODS_ROOT}/Target Support Files/Pods-final/Pods-final-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/DLPhotoPicker/DLPhotoPicker.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/TOCropViewController/TOCropViewController.framework
+${BUILT_PRODUCTS_DIR}/XHImageViewer/XHImageViewer.framework
+${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework
