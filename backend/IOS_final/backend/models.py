@@ -21,6 +21,7 @@ class Record(models.Model):
 
     def __str__(self) -> str:
         return self.title
+    # def was_published_in_day(self,)
 
 class Tag_Record(models.Model):
     tag = models.ForeignKey(Tag,on_delete=models.CASCADE)

@@ -32,7 +32,6 @@
 		C6FB7D872597756B005666FB /* LTSCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D832597756B005666FB /* LTSCalendarViewController.m */; };
 		C6FB7D8D2597757B005666FB /* LTSCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D8A2597757A005666FB /* LTSCircleView.m */; };
 		C6FB7D8E2597757B005666FB /* LTSCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D8C2597757B005666FB /* LTSCalendarWeekDayView.m */; };
-		C6FB7D9225977606005666FB /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D9125977606005666FB /* BViewController.m */; };
 		C6FB7D9625A35A1C005666FB /* RightMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D9525A35A1C005666FB /* RightMenuView.m */; };
 		C6FB7D9C25A42C67005666FB /* AddPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D9B25A42C67005666FB /* AddPlanVC.m */; };
 		C6FB7DA025A43356005666FB /* AddSimplePlanView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D9F25A43356005666FB /* AddSimplePlanView.m */; };
@@ -404,7 +403,6 @@
 				C6FB7DA025A43356005666FB /* AddSimplePlanView.m in Sources */,
 				6751DECD2590CBF100838BB4 /* AppDelegate.m in Sources */,
 				C6FB7D862597756B005666FB /* LTSCalendarManager.m in Sources */,
-				C6FB7D9225977606005666FB /* BViewController.m in Sources */,
 				6751DEDE2590CBF300838BB4 /* main.m in Sources */,
 				C6FB7D872597756B005666FB /* LTSCalendarViewController.m in Sources */,
 				C6FB7D7A2597755C005666FB /* LTSCalendarCollectionViewFlowLayout.m in Sources */,
