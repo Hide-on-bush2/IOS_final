@@ -256,8 +256,71 @@ def delete_records_by_id(request):
         curr_record = Record.objects.filter(pk=curr_record_id)
         if not curr_record.exists():
             return HttpResponse(json.dumps({"status":"failure","data":"the record to be deleted not exit"}), content_type="application/json")
+        tag_records = Tag_Record.objects.filter(record_id=curr_record_id)
+        tags_id = []
+        for item in tag_records:
+            tags_id.append(item.tag_id)
+        #删除tag_record表中的记录
+        tag_records.delete()
+        for tag_id in tags_id:
+            t_tag_record = Tag_Record.objects.filter(tag_id=tag_id)
+            if not t_tag_record.exists():
+                deleted_tag = Tag.objects.filter(pk=tag_id)
+                deleted_tag.delete()
         curr_record.delete()
         #将Tag_Record表中的记录删了
+        return HttpResponse(json.dumps({"status":"success","data":""}), content_type="application/json")
+    else:
+        return HttpResponse(json.dumps({"status":"failure","data":"Not a post request"}), content_type="application/json")
+
+@csrf_exempt
+def delete_catalog(request):
+    if request.method == "POST":
+        param = json.loads(request.body.decode())
+        if "catalog_name" not in param:
+            return HttpResponse(json.dumps({"status":"failure","data":"key 'catalog_name' not found"}), content_type="application/json")
+        catalog_name = param["catalog_name"]
+        catalog = Catalog.objects.filter(catalog_name=catalog_name)
+        if not catalog.exists():
+            return HttpResponse(json.dumps({"status":"failure","data":"the catalog to be deleted not exit"}), content_type="application/json")
+        catalog.delete()
+        return HttpResponse(json.dumps({"status":"success","data":""}), content_type="application/json")
+    else:
+        return HttpResponse(json.dumps({"status":"failure","data":"Not a post request"}), content_type="application/json")
+
+@csrf_exempt
+def delete_tag(request):
+    if request.method == "POST":
+        param = json.loads(request.body.decode())
+        if "tag_name" not in param:
+            return HttpResponse(json.dumps({"status":"failure","data":"key 'tag_name' not found"}), content_type="application/json")
+        tag_name = param["tag_name"]
+        tag = Tag.objects.filter(tag_name=tag_name)
+        if not tag.exists():
+            return HttpResponse(json.dumps({"status":"failure","data":"the tag to be deleted not exit"}), content_type="application/json")
+        tag_id = tag[0].id
+        tag_record_query = Tag_Record.objects.filter(tag_id=tag_id)
+        record_id_set = set()
+        for tag_record in tag_record_query:
+            record_id_set.add(tag_record.record_id)
+        print(record_id_set)
+        tag_record_query.delete()
+        tag.delete()
+        for record_id in record_id_set:
+            other_tag_record = Tag_Record.objects.filter(record_id=record_id)
+            other_tag_ids = set()
+            for item in other_tag_record:
+                other_tag_ids.add(item.tag_id)
+            other_tag_record.delete()
+            for tag_id in other_tag_ids:
+                t_tag_record_query = Tag_Record.objects.filter(tag_id=tag_id)
+                if not t_tag_record_query.exists():
+                    deleted_tag = Tag.objects.filter(id=tag_id)
+                    deleted_tag.delete()
+            record = Record.objects.filter(id=record_id)
+            if record.exists():
+                record.delete()
+        
         return HttpResponse(json.dumps({"status":"success","data":""}), content_type="application/json")
     else:
         return HttpResponse(json.dumps({"status":"failure","data":"Not a post request"}), content_type="application/json")
