@@ -15,12 +15,20 @@
 		6751DED82590CBF300838BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6751DED72590CBF300838BB4 /* Assets.xcassets */; };
 		6751DEDB2590CBF300838BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6751DED92590CBF300838BB4 /* LaunchScreen.storyboard */; };
 		6751DEDE2590CBF300838BB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6751DEDD2590CBF300838BB4 /* main.m */; };
-		6751DEE82590D25E00838BB4 /* ClockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6751DEE72590D25E00838BB4 /* ClockVC.m */; };
 		6751DEED2590D34800838BB4 /* PlanListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6751DEEC2590D34800838BB4 /* PlanListVC.m */; };
 		6751DEF22590D38B00838BB4 /* DailyPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6751DEF12590D38B00838BB4 /* DailyPlanVC.m */; };
 		6751DEF72590D3BE00838BB4 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6751DEF62590D3BE00838BB4 /* SettingVC.m */; };
 		676222372591E2E70069DF6B /* RecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 676222362591E2E70069DF6B /* RecordModel.m */; };
 		676222442591EFC10069DF6B /* DynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 676222432591EFC10069DF6B /* DynamicCell.m */; };
+		67DD05C725A7404800319FC3 /* CountDownVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD05C225A7404800319FC3 /* CountDownVC.m */; };
+		67DD05C825A7404800319FC3 /* ClockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD05C425A7404800319FC3 /* ClockVC.m */; };
+		67DD05DD25A741BE00319FC3 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD05DC25A741BE00319FC3 /* BViewController.m */; };
+		67DD063B25A7473F00319FC3 /* CycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD063A25A7473F00319FC3 /* CycleView.m */; };
+		67DD064925A74A8600319FC3 /* LeftNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD064825A74A8600319FC3 /* LeftNavView.m */; };
+		67DD064D25A74A9700319FC3 /* TagsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD064C25A74A9700319FC3 /* TagsVC.m */; };
+		67DD065125A74AA700319FC3 /* WorkPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD065025A74AA700319FC3 /* WorkPlanVC.m */; };
+		67DD065525A74AB100319FC3 /* StudyPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD065425A74AB100319FC3 /* StudyPlanVC.m */; };
+		67DD065B25A74C7F00319FC3 /* AddSimplePlanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD065A25A74C7F00319FC3 /* AddSimplePlanView.m */; };
 		C6FB7D662592CDE4005666FB /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D652592CDE4005666FB /* TestData.m */; };
 		C6FB7D782597755C005666FB /* LTSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D6F2597755C005666FB /* LTSCalendarAppearance.m */; };
 		C6FB7D792597755C005666FB /* LTSCalendarCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D712597755C005666FB /* LTSCalendarCollectionCell.m */; };
@@ -34,7 +42,6 @@
 		C6FB7D8E2597757B005666FB /* LTSCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D8C2597757B005666FB /* LTSCalendarWeekDayView.m */; };
 		C6FB7D9625A35A1C005666FB /* RightMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D9525A35A1C005666FB /* RightMenuView.m */; };
 		C6FB7D9C25A42C67005666FB /* AddPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D9B25A42C67005666FB /* AddPlanVC.m */; };
-		C6FB7DA025A43356005666FB /* AddSimplePlanView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7D9F25A43356005666FB /* AddSimplePlanView.m */; };
 		C6FB7DA525A467FB005666FB /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FB7DA425A467FB005666FB /* ShareVC.m */; };
 /* End PBXBuildFile section */
 
@@ -54,9 +61,6 @@
 		6751DEDA2590CBF300838BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6751DEDC2590CBF300838BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6751DEDD2590CBF300838BB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6751DEE62590D25E00838BB4 /* ClockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockVC.h; sourceTree = "<group>"; };
-		6751DEE72590D25E00838BB4 /* ClockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockVC.m; sourceTree = "<group>"; };
-		6751DEEB2590D34800838BB4 /* PlanListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanListVC.h; sourceTree = "<group>"; };
 		6751DEEC2590D34800838BB4 /* PlanListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanListVC.m; sourceTree = "<group>"; };
 		6751DEF02590D38B00838BB4 /* DailyPlanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailyPlanVC.h; sourceTree = "<group>"; };
 		6751DEF12590D38B00838BB4 /* DailyPlanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyPlanVC.m; sourceTree = "<group>"; };
@@ -66,6 +70,25 @@
 		676222362591E2E70069DF6B /* RecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordModel.m; sourceTree = "<group>"; };
 		676222422591EFC10069DF6B /* DynamicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicCell.h; sourceTree = "<group>"; };
 		676222432591EFC10069DF6B /* DynamicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicCell.m; sourceTree = "<group>"; };
+		67DD05C125A7404800319FC3 /* ClockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockVC.h; sourceTree = "<group>"; };
+		67DD05C225A7404800319FC3 /* CountDownVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownVC.m; sourceTree = "<group>"; };
+		67DD05C425A7404800319FC3 /* ClockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockVC.m; sourceTree = "<group>"; };
+		67DD05C525A7404800319FC3 /* CountDownVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownVC.h; sourceTree = "<group>"; };
+		67DD05DB25A741B900319FC3 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		67DD05DC25A741BE00319FC3 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		67DD063925A7473A00319FC3 /* CycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CycleView.h; path = "../../../../../final /final/Clock/CycleView.h"; sourceTree = "<group>"; };
+		67DD063A25A7473F00319FC3 /* CycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CycleView.m; path = "../../../../../final /final/Clock/CycleView.m"; sourceTree = "<group>"; };
+		67DD064625A74A5000319FC3 /* LeftNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftNavView.h; path = "../../../../../final /final/PlanList/LeftNavView.h"; sourceTree = "<group>"; };
+		67DD064725A74A5800319FC3 /* PlanListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlanListVC.h; path = "../../../../../final /final/PlanList/PlanListVC.h"; sourceTree = "<group>"; };
+		67DD064825A74A8600319FC3 /* LeftNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftNavView.m; path = "../../../../../final /final/PlanList/LeftNavView.m"; sourceTree = "<group>"; };
+		67DD064B25A74A9100319FC3 /* TagsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TagsVC.h; path = "../../../../../final /final/PlanList/TagsVC.h"; sourceTree = "<group>"; };
+		67DD064C25A74A9700319FC3 /* TagsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TagsVC.m; path = "../../../../../final /final/PlanList/TagsVC.m"; sourceTree = "<group>"; };
+		67DD064F25A74AA200319FC3 /* WorkPlanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkPlanVC.h; path = "../../../../../final /final/PlanList/WorkPlanVC.h"; sourceTree = "<group>"; };
+		67DD065025A74AA700319FC3 /* WorkPlanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkPlanVC.m; path = "../../../../../final /final/PlanList/WorkPlanVC.m"; sourceTree = "<group>"; };
+		67DD065325A74AAC00319FC3 /* StudyPlanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyPlanVC.h; path = "../../../../../final /final/PlanList/StudyPlanVC.h"; sourceTree = "<group>"; };
+		67DD065425A74AB100319FC3 /* StudyPlanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyPlanVC.m; path = "../../../../../final /final/PlanList/StudyPlanVC.m"; sourceTree = "<group>"; };
+		67DD065925A74C7700319FC3 /* AddSimplePlanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddSimplePlanView.h; path = ../../../../../../Downloads/AddSimplePlanView.h; sourceTree = "<group>"; };
+		67DD065A25A74C7F00319FC3 /* AddSimplePlanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddSimplePlanView.m; path = ../../../../../../Downloads/AddSimplePlanView.m; sourceTree = "<group>"; };
 		C6FB7D642592CDCD005666FB /* TestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
 		C6FB7D652592CDE4005666FB /* TestData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
 		C6FB7D6E2597755C005666FB /* LTSCalendarDayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSCalendarDayItem.h; sourceTree = "<group>"; };
@@ -89,14 +112,10 @@
 		C6FB7D8A2597757A005666FB /* LTSCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSCircleView.m; sourceTree = "<group>"; };
 		C6FB7D8B2597757A005666FB /* LTSCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSCircleView.h; sourceTree = "<group>"; };
 		C6FB7D8C2597757B005666FB /* LTSCalendarWeekDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSCalendarWeekDayView.m; sourceTree = "<group>"; };
-		C6FB7D9025977606005666FB /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BViewController.h; path = ../../../../Downloads/LTSCalendar/LTSCalendar/BViewController.h; sourceTree = "<group>"; };
-		C6FB7D9125977606005666FB /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BViewController.m; path = ../../../../Downloads/LTSCalendar/LTSCalendar/BViewController.m; sourceTree = "<group>"; };
 		C6FB7D9425A359EA005666FB /* RightMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightMenuView.h; sourceTree = "<group>"; };
 		C6FB7D9525A35A1C005666FB /* RightMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightMenuView.m; sourceTree = "<group>"; };
 		C6FB7D9A25A42C67005666FB /* AddPlanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlanVC.h; sourceTree = "<group>"; };
 		C6FB7D9B25A42C67005666FB /* AddPlanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlanVC.m; sourceTree = "<group>"; };
-		C6FB7D9E25A43346005666FB /* AddSimplePlanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddSimplePlanView.h; sourceTree = "<group>"; };
-		C6FB7D9F25A43356005666FB /* AddSimplePlanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddSimplePlanView.m; sourceTree = "<group>"; };
 		C6FB7DA325A467DE005666FB /* ShareVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
 		C6FB7DA425A467FB005666FB /* ShareVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,7 +158,7 @@
 				C6FB7D632592CDAA005666FB /* test */,
 				676222342591E23A0069DF6B /* Cell */,
 				6751DEFE2590D8E400838BB4 /* Setting */,
-				6751DEFD2590D8DD00838BB4 /* Clock */,
+				67DD05BF25A7404800319FC3 /* Clock */,
 				6751DEFC2590D8CE00838BB4 /* DailyPLan */,
 				6751DEFB2590D8C000838BB4 /* PlanList */,
 				6751DECB2590CBF100838BB4 /* AppDelegate.h */,
@@ -160,8 +179,16 @@
 		6751DEFB2590D8C000838BB4 /* PlanList */ = {
 			isa = PBXGroup;
 			children = (
+				67DD064725A74A5800319FC3 /* PlanListVC.h */,
 				6751DEEC2590D34800838BB4 /* PlanListVC.m */,
-				6751DEEB2590D34800838BB4 /* PlanListVC.h */,
+				67DD064625A74A5000319FC3 /* LeftNavView.h */,
+				67DD064825A74A8600319FC3 /* LeftNavView.m */,
+				67DD064B25A74A9100319FC3 /* TagsVC.h */,
+				67DD064C25A74A9700319FC3 /* TagsVC.m */,
+				67DD064F25A74AA200319FC3 /* WorkPlanVC.h */,
+				67DD065025A74AA700319FC3 /* WorkPlanVC.m */,
+				67DD065325A74AAC00319FC3 /* StudyPlanVC.h */,
+				67DD065425A74AB100319FC3 /* StudyPlanVC.m */,
 			);
 			path = PlanList;
 			sourceTree = "<group>";
@@ -169,8 +196,8 @@
 		6751DEFC2590D8CE00838BB4 /* DailyPLan */ = {
 			isa = PBXGroup;
 			children = (
-				C6FB7D9025977606005666FB /* BViewController.h */,
-				C6FB7D9125977606005666FB /* BViewController.m */,
+				67DD05DC25A741BE00319FC3 /* BViewController.m */,
+				67DD05DB25A741B900319FC3 /* BViewController.h */,
 				C6FB7D6D259774BF005666FB /* Calendar */,
 				6751DEF12590D38B00838BB4 /* DailyPlanVC.m */,
 				6751DEF02590D38B00838BB4 /* DailyPlanVC.h */,
@@ -178,15 +205,6 @@
 				C6FB7D9525A35A1C005666FB /* RightMenuView.m */,
 			);
 			path = DailyPLan;
-			sourceTree = "<group>";
-		};
-		6751DEFD2590D8DD00838BB4 /* Clock */ = {
-			isa = PBXGroup;
-			children = (
-				6751DEE62590D25E00838BB4 /* ClockVC.h */,
-				6751DEE72590D25E00838BB4 /* ClockVC.m */,
-			);
-			path = Clock;
 			sourceTree = "<group>";
 		};
 		6751DEFE2590D8E400838BB4 /* Setting */ = {
@@ -207,6 +225,19 @@
 				676222432591EFC10069DF6B /* DynamicCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		67DD05BF25A7404800319FC3 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				67DD063A25A7473F00319FC3 /* CycleView.m */,
+				67DD063925A7473A00319FC3 /* CycleView.h */,
+				67DD05C125A7404800319FC3 /* ClockVC.h */,
+				67DD05C225A7404800319FC3 /* CountDownVC.m */,
+				67DD05C425A7404800319FC3 /* ClockVC.m */,
+				67DD05C525A7404800319FC3 /* CountDownVC.h */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 		9F282FF3FEFCA89E9E62237A /* Frameworks */ = {
@@ -266,10 +297,10 @@
 		C6FB7D9925A42C1C005666FB /* AddPlan */ = {
 			isa = PBXGroup;
 			children = (
+				67DD065925A74C7700319FC3 /* AddSimplePlanView.h */,
+				67DD065A25A74C7F00319FC3 /* AddSimplePlanView.m */,
 				C6FB7D9A25A42C67005666FB /* AddPlanVC.h */,
 				C6FB7D9B25A42C67005666FB /* AddPlanVC.m */,
-				C6FB7D9E25A43346005666FB /* AddSimplePlanView.h */,
-				C6FB7D9F25A43356005666FB /* AddSimplePlanView.m */,
 			);
 			path = AddPlan;
 			sourceTree = "<group>";
@@ -397,10 +428,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6751DED32590CBF100838BB4 /* ViewController.m in Sources */,
+				67DD065125A74AA700319FC3 /* WorkPlanVC.m in Sources */,
 				C6FB7D9625A35A1C005666FB /* RightMenuView.m in Sources */,
 				6751DEF72590D3BE00838BB4 /* SettingVC.m in Sources */,
+				67DD064D25A74A9700319FC3 /* TagsVC.m in Sources */,
+				67DD065525A74AB100319FC3 /* StudyPlanVC.m in Sources */,
 				C6FB7D8D2597757B005666FB /* LTSCircleView.m in Sources */,
-				C6FB7DA025A43356005666FB /* AddSimplePlanView.m in Sources */,
+				67DD065B25A74C7F00319FC3 /* AddSimplePlanView.m in Sources */,
 				6751DECD2590CBF100838BB4 /* AppDelegate.m in Sources */,
 				C6FB7D862597756B005666FB /* LTSCalendarManager.m in Sources */,
 				6751DEDE2590CBF300838BB4 /* main.m in Sources */,
@@ -409,14 +443,18 @@
 				6751DED02590CBF100838BB4 /* SceneDelegate.m in Sources */,
 				C6FB7D9C25A42C67005666FB /* AddPlanVC.m in Sources */,
 				C6FB7D662592CDE4005666FB /* TestData.m in Sources */,
+				67DD063B25A7473F00319FC3 /* CycleView.m in Sources */,
 				676222442591EFC10069DF6B /* DynamicCell.m in Sources */,
 				C6FB7D7B2597755C005666FB /* LTSCalendarContentView.m in Sources */,
+				67DD05C825A7404800319FC3 /* ClockVC.m in Sources */,
+				67DD064925A74A8600319FC3 /* LeftNavView.m in Sources */,
 				C6FB7DA525A467FB005666FB /* ShareVC.m in Sources */,
 				C6FB7D852597756B005666FB /* LTSCalendarScrollView.m in Sources */,
+				67DD05C725A7404800319FC3 /* CountDownVC.m in Sources */,
 				C6FB7D7C2597755C005666FB /* LTSCalendarDayItem.m in Sources */,
+				67DD05DD25A741BE00319FC3 /* BViewController.m in Sources */,
 				C6FB7D8E2597757B005666FB /* LTSCalendarWeekDayView.m in Sources */,
 				676222372591E2E70069DF6B /* RecordModel.m in Sources */,
-				6751DEE82590D25E00838BB4 /* ClockVC.m in Sources */,
 				C6FB7D792597755C005666FB /* LTSCalendarCollectionCell.m in Sources */,
 				6751DEF22590D38B00838BB4 /* DailyPlanVC.m in Sources */,
 				6751DEED2590D34800838BB4 /* PlanListVC.m in Sources */,

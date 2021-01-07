@@ -10,12 +10,22 @@
 #import "DynamicCell.h"
 #import "AddSimplePlanView.h"
 #import "AddPlanVC.h"
-
+#import "LeftNavView.h"
+#import "TagsVC.h"
+#import "WorkPlanVC.h"
+#import "StudyPlanVC.h"
+#import "SettingVC.h"
 #import "Masonry.h"
 
 #import "TestData.h"
 
+#define ImageviewWidth 18
+
 @interface PlanListVC ()<UITableViewDataSource,UITableViewDelegate, UISearchResultsUpdating,UITextFieldDelegate>
+{
+    LeftNavView *leftNav;
+
+}
 @property (nonatomic,strong) UITableView * tabelView;
 @property (nonatomic,strong) NSMutableArray * dataArray;
 
@@ -107,9 +117,60 @@
 #pragma mark - 导航栏两侧
 - (void)leftBarButtonItemClick:(UIBarButtonItem *)barButtonItem {
     
+    leftNav = [[LeftNavView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width*0.85, self.view.bounds.size.height)];
+    leftNav.customDelegate = self;
+    [self.view addSubview:leftNav];
+    
 }
 - (void)rightBarButtonItemClick:(UIBarButtonItem *)barButtonItem {
     
+}
+
+-(void)LeftMenuViewClick:(NSInteger)tag{
+    switch (tag) {
+        case 0:
+        {
+            PlanListVC *vc = [[PlanListVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case 1:
+        {
+            TagsVC *vc = [[TagsVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+           
+        }
+            break;
+            
+            
+        case 2:
+        {
+            WorkPlanVC *vc = [[WorkPlanVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            
+        }
+            break;
+            
+        case 3:
+        {
+            StudyPlanVC *vc = [[StudyPlanVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+           
+        }
+            break;
+            
+        case 4:{
+            SettingVC *vc = [[SettingVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            
+        }
+            break;
+            
+            
+        default:
+            break;
+    }
 }
 
 
